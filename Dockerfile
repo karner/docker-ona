@@ -23,7 +23,7 @@ RUN ln -s /usr/lib/x86_64-linux-gnu/libz.so /usr/lib/
 RUN ln -s /usr/lib/x86_64-linux-gnu/libjpeg.so /usr/lib/
 
 RUN git clone https://github.com/onaio/onadata.git /home/ubuntu/src/ona
-RUN . /home/ubuntu/src/.virtualenvs/ona/bin/activate && pip install -r /home/ubuntu/src/ona/requirements/common.pip --allow-all-external
+RUN . /home/ubuntu/src/.virtualenvs/ona/bin/activate && pip install -r /home/ubuntu/src/ona/requirements/base.pip --allow-all-external
 RUN . home/ubuntu/src/.virtualenvs/ona/bin/activate && pip install uwsgi
 
 RUN apt-get install -yqq tmux
